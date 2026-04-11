@@ -1,177 +1,123 @@
-# Adelaide-NDIS-Service-provider-Website-
+# Adelaide NDIS Service Provider Website
 
- 
+## 📌 Project Overview
 
-2. Table of Contents 
+The **Adelaide NDIS Service Provider Website** is a web-based information system designed to support National Disability Insurance Scheme (NDIS) service providers in managing participants, services, and operational workflows efficiently.
 
- 
+The system aims to improve accessibility, streamline service delivery, and enhance communication between participants and providers while ensuring compliance with NDIS standards and data protection requirements.
 
-3. Introduction 
+---
 
-3.1 Purpose 
+## 🎯 Project Objectives
 
-Explain hy this system is being developed 
+* Develop a user-friendly platform for NDIS participants and service providers
+* Enable efficient service booking and management
+* Provide a centralized admin dashboard for monitoring and reporting
+* Ensure data security, privacy, and compliance with NDIS guidelines
+* Improve overall service accessibility and user experience
 
-3.2 Scope 
+---
 
-What the system will do  
+## 👥 Stakeholders
 
-Key deliverables  
+* **NDIS Participants** – Individuals seeking support services
+* **Service Providers** – Organizations offering NDIS services
+* **Administrators** – System managers responsible for operations and monitoring
 
-3.3 Definitions / Acronyms 
+---
 
-3.4 Overview 
+## ⚙️ Key Features
 
- 
+* User Registration & Secure Login
+* Participant Profile Management
+* Service Listing and Search
+* Online Booking System
+* Payment Integration (if applicable)
+* Admin Dashboard (manage users, services, reports)
+* Notifications and Updates
 
-4. Project Description 
+---
 
-(From rubric Criterion 1) 
+## 🏗️ System Architecture
 
-4.1 Business Description 
+The system follows a **client-server architecture**, consisting of:
 
-Company/organization background  
+* Frontend (Web Interface)
+* Backend (Application Server)
+* Database (Data Storage)
+* External APIs (e.g., payment gateway, authentication services)
 
-4.2 Problem Statement 
+---
 
-What problem currently exists  
+## 🧩 Project Deliverables
 
-4.3 Proposed System 
+This repository contains all major deliverables for the capstone project:
 
-Your solution  
+### 📄 Documentation
 
-4.4 Project Objectives 
+* Software Requirements Specification (SRS Report)
+* Use Case Diagram & Descriptions
+* Data Flow Diagrams (DFD Level 0 & Level 1)
+* Entity Relationship Diagram (ERD)
+* System Architecture Diagram
+* UI Wireframes / Storyboards
+* Work Breakdown Structure (WBS)
+* Gantt Chart
+* Test Plan & Implementation Plan
 
-4.5 Methodology 
 
-(e.g., Agile, Waterfall) 
+## 🛠️ Technology Stack (Proposed)
 
- 
+* **Frontend:** HTML, CSS, JavaScript (React.js optional)
+* **Backend:** Node.js / Express.js (or alternative)
+* **Database:** MySQL / MongoDB
+* **Version Control:** Git & GitHub
 
-5. System Requirements Analysis  
+---
 
-5.1 Business Requirements 
+## 🔐 Security & Privacy
 
-5.2 System Requirements 
+* Implementation of **data encryption** for sensitive information
+* Use of **secure authentication mechanisms**
+* Compliance with **NDIS data protection and privacy standards**
+* Data anonymization where required
 
-Hardware requirements  
+---
 
-Software requirements  
+## 📊 Project Planning
 
-5.3 User Requirements 
+* Agile-based development approach
+* Task tracking using GitHub Issues / Projects
+* Weekly progress updates documented in repository
 
-Actors  
+---
 
-User roles  
+## 🧪 Testing Strategy
 
-5.4 Use Case Diagram 
+* Unit Testing
+* Integration Testing
+* User Acceptance Testing (UAT)
+* Performance and Security Testing
 
-(Required in brief) 
+---
 
-5.5 Use Case Descriptions 
+## 📅 Project Status
 
-5.6 Functional Requirements 
+**Current Status:** On Track ✅
 
-5.7 Non-Functional Requirements 
+---
 
- 
+## 👨‍💻 Team Members
 
-6. System Design & Architecture 
+K231661 Mr Rabeel Riasat K231661@student.kent.edu.au
 
-6.1 System Architecture Diagram 
+K230452 Mr Sanup Shrestha @student.kent.edu.au
 
-6.2 Data Flow Diagram (DFD) 
+K232045 Mr Samyog Bajgain K232045@student.kent.edu.au
 
-6.3 Database Design 
+K250176 Mr Ashish NEUPANE K250176@student.kent.edu.au
 
-ERD (Entity Relationship Diagram)  
+K240793 Mr Muman Ghale K240793@student.kent.edu.au
 
-Tables  
 
-Data Dictionary  
-
-6.4 Data Security 
-
-Encryption  
-
-Data anonymization  
-
-6.5 Data Protection Impact Assessment (DPIA) 
-
-(Explicitly required in brief) 
-
- 
-
-7. User Interface Design 
-
-7.1 UI Design Principles 
-
-7.2 Storyboards / Wireframes 
-
-7.3 Input Forms 
-
-7.4 Output Reports 
-
- 
-
-8. Project Planning 
-
-8.1 Work Breakdown Structure (WBS) 
-
-8.2 Gantt Chart 
-
-8.3 Team Roles (Group Cohesion – 5 marks) 
-
- 
-
-9. Testing & Implementation 
-
-9.1 Test Plan 
-
-9.2 Test Cases 
-
-9.3 Implementation Plan 
-
- 
-
-10. Conclusion 
-
- 
-
-11. References (Harvard Style – Minimum 5) 
-
-(Required in brief page 5) 
-
- 
-
-12. Appendix 
-
-1. USE CASE DIAGRAM 
-
- 
-
- 
-
- 
-
-DATA FLOW DIAGRAM (LEVEL 1) 
-
- 
-
- 
-
-ENTITY RELATIONSHIP DIAGRAM (ERD) 
-
- 
-
-USER INTERFACE FLOW (WIRE FRAME LOGIC) 
-
- 
-
- 
-
-WORK BREAKDOWN STRUCTURE (WBS) 
-
- 
-
- 
+---
