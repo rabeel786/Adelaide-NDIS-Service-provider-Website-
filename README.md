@@ -1,123 +1,229 @@
-# Adelaide NDIS Service Provider Website
 
-## 📌 Project Overview
+# **Adelaide Care Connect – NDIS Service Provider Website**
 
-The **Adelaide NDIS Service Provider Website** is a web-based information system designed to support National Disability Insurance Scheme (NDIS) service providers in managing participants, services, and operational workflows efficiently.
+## **Project Overview**
 
-The system aims to improve accessibility, streamline service delivery, and enhance communication between participants and providers while ensuring compliance with NDIS standards and data protection requirements.
+Adelaide Care Connect is a full-stack web-based information system designed for an NDIS (National Disability Insurance Scheme) service provider in Adelaide, Australia.
 
----
+The system aims to replace manual and fragmented processes with a centralized digital platform that improves:
 
-## 🎯 Project Objectives
-
-* Develop a user-friendly platform for NDIS participants and service providers
-* Enable efficient service booking and management
-* Provide a centralized admin dashboard for monitoring and reporting
-* Ensure data security, privacy, and compliance with NDIS guidelines
-* Improve overall service accessibility and user experience
+* Client management
+* Staff scheduling
+* Service bookings
+* Document handling
+* Overall operational efficiency
 
 ---
 
-## 👥 Stakeholders
+## **Project Objectives**
 
-* **NDIS Participants** – Individuals seeking support services
-* **Service Providers** – Organizations offering NDIS services
-* **Administrators** – System managers responsible for operations and monitoring
+* Provide a secure, role-based platform for **Participants, Staff, and Admins**
+* Enable **online service booking and scheduling**
+* Digitise **client registration and document storage**
+* Integrate an **AI-powered chatbot** for NDIS-related queries
+* Ensure compliance with:
 
----
-
-## ⚙️ Key Features
-
-* User Registration & Secure Login
-* Participant Profile Management
-* Service Listing and Search
-* Online Booking System
-* Payment Integration (if applicable)
-* Admin Dashboard (manage users, services, reports)
-* Notifications and Updates
+  * Australian Privacy Act 1988
+  * NDIS Practice Standards
+* Deliver a **responsive and accessible UI (WCAG 2.1 AA)**
 
 ---
 
-## 🏗️ System Architecture
+## **System Features**
 
-The system follows a **client-server architecture**, consisting of:
+### **Participant Portal**
 
-* Frontend (Web Interface)
-* Backend (Application Server)
-* Database (Data Storage)
-* External APIs (e.g., payment gateway, authentication services)
+* Register and manage profile
+* Book and manage services
+* Upload and access documents
+* Interact with AI chatbot
 
----
+### **Staff Portal**
 
-## 🧩 Project Deliverables
+* View and manage shifts
+* Accept/decline shift requests
+* Manage availability
 
-This repository contains all major deliverables for the capstone project:
+### **Admin Portal**
 
-### 📄 Documentation
+* Manage participants and staff
+* Approve/reject bookings
+* Manage services and documents
+* View reports and dashboards
 
-* Software Requirements Specification (SRS Report)
-* Use Case Diagram & Descriptions
-* Data Flow Diagrams (DFD Level 0 & Level 1)
-* Entity Relationship Diagram (ERD)
-* System Architecture Diagram
-* UI Wireframes / Storyboards
-* Work Breakdown Structure (WBS)
-* Gantt Chart
-* Test Plan & Implementation Plan
+### **Public Website**
 
-
-## 🛠️ Technology Stack (Proposed)
-
-* **Frontend:** HTML, CSS, JavaScript (React.js optional)
-* **Backend:** Node.js / Express.js (or alternative)
-* **Database:** MySQL / MongoDB
-* **Version Control:** Git & GitHub
+* Service information
+* News & resources
+* Contact/enquiry form
 
 ---
 
-## 🔐 Security & Privacy
+## **Tech Stack**
 
-* Implementation of **data encryption** for sensitive information
-* Use of **secure authentication mechanisms**
-* Compliance with **NDIS data protection and privacy standards**
-* Data anonymization where required
-
----
-
-## 📊 Project Planning
-
-* Agile-based development approach
-* Task tracking using GitHub Issues / Projects
-* Weekly progress updates documented in repository
+| Layer           | Technology              |
+| --------------- | ----------------------- |
+| Front-End       | HTML5, CSS3, JavaScript |
+| Back-End        | PHP 8.x                 |
+| Database        | MySQL 8.x               |
+| Server          | Apache (XAMPP/WAMP)     |
+| AI Integration  | OpenAI GPT API          |
+| Version Control | GitHub                  |
 
 ---
 
-## 🧪 Testing Strategy
+## **System Architecture**
+
+The application follows a **Three-Tier Architecture**:
+
+1. **Presentation Layer** – UI (HTML, CSS, JS)
+2. **Application Layer** – PHP backend logic
+3. **Data Layer** – MySQL database
+
+---
+
+## **Project Structure**
+
+```
+/adelaide-care-connect/
+│
+├── public/              # Public-facing files
+│   ├── index.php
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── src/                 # Core application logic
+│   ├── controllers/
+│   ├── models/
+│   ├── views/
+│   └── config/
+│
+├── storage/
+│   └── uploads/         # Secure document storage
+│
+├── database/
+│   ├── schema.sql
+│   └── seed.sql
+│
+├── .env
+└── README.md
+```
+
+---
+
+## **Development Methodology**
+
+This project follows an **Agile Scrum approach**:
+
+* 2-week sprints
+* Sprint planning & reviews
+* Continuous integration via GitHub
+* Iterative SDLC (Requirements → Design → Development → Testing)
+
+---
+
+## **Team Members**
+
+| Name           | Role                |
+| -------------- | ------------------- |
+| Rabeel Riasat  | Project Manager     |
+| Sanup Shrestha | Business Analyst    |
+| Samyog Bajgain | Database Designer   |
+| Ashish Neupane | Front-End Developer |
+| Muman Ghale    | Back-End Developer  |
+| Bhushan     | QA & Documentation  |
+
+---
+
+## **Key Functionalities**
+
+* Secure authentication with role-based access
+* Service booking and scheduling system
+* Document upload with access control
+* AI chatbot integration
+* Admin dashboard with reporting features
+
+---
+
+## **Security Features**
+
+* Bcrypt password hashing
+* AES-256 data encryption
+* Prepared statements (SQL injection prevention)
+* HTTPS/SSL enforcement
+* Role-Based Access Control (RBAC)
+
+---
+
+## **Testing**
+
+The system includes:
 
 * Unit Testing
 * Integration Testing
+* System Testing
 * User Acceptance Testing (UAT)
-* Performance and Security Testing
+
+Sample test cases include:
+
+* Registration validation
+* Booking workflows
+* Document uploads
+* Security testing (SQL injection, XSS)
 
 ---
 
-## 📅 Project Status
+## **Setup Instructions**
 
-**Current Status:** On Track ✅
+### **1. Clone Repository**
+
+```bash
+git clone https://github.com/your-username/adelaide-care-connect.git
+```
+
+### **2. Setup Environment**
+
+* Install XAMPP/WAMP
+* Place project in `htdocs`
+
+### **3. Database Setup**
+
+* Import `database/schema.sql`
+* Configure database in:
+
+```
+/src/config/db.php
+```
+
+### **4. Run Project**
+
+* Start Apache & MySQL
+* Open in browser:
+
+```
+http://localhost/adelaide-care-connect
+```
 
 ---
 
-## 👨‍💻 Team Members
+## **Future Enhancements**
 
-K231661 Mr Rabeel Riasat K231661@student.kent.edu.au
-
-K230452 Mr Sanup Shrestha @student.kent.edu.au
-
-K232045 Mr Samyog Bajgain K232045@student.kent.edu.au
-
-K250176 Mr Ashish NEUPANE K250176@student.kent.edu.au
-
-K240793 Mr Muman Ghale K240793@student.kent.edu.au
-
+* Mobile application (iOS/Android)
+* Integration with NDIS systems
+* Advanced analytics dashboard
+* Telehealth functionality
 
 ---
+
+## **License**
+
+This project is developed for academic purposes at Kent Institute Australia.
+
+---
+
+## **Acknowledgements**
+
+* NDIS Framework (NDIA)
+* Australian Privacy Act 1988
+* OpenAI API Documentation
