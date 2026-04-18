@@ -179,7 +179,7 @@ Sample test cases include:
 ### **1. Clone Repository**
 
 ```bash
-git clone https://github.com/your-username/adelaide-care-connect.git
+git 
 ```
 
 ### **2. Setup Environment**
