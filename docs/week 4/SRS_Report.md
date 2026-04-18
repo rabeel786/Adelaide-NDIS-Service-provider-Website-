@@ -15,7 +15,7 @@
 | Samyog Bajgain | K232045 | Database Designer |
 | Ashish Neupane | K250176 | Front-End Developer |
 | Muman Ghale | K240793 | Back-End Developer |
-| Bhushan | KXXXXXX | QA & Documentation |
+| Bhushan | K250172 | QA & Documentation |
 
 **Lecturer:** Mr Mehedi Hasan
 **Industry Sponsor:** Skillup Labs — Nabin Singh (wil@skilluplabs.com.au)
