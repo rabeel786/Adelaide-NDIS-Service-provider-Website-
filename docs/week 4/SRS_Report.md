@@ -12,10 +12,10 @@
 |---|---|---|
 | Rabeel Riasat | K231661 | Project Manager |
 | Sanup Shrestha | K230452 | Business Analyst |
-| Samyog Bajgain | K232045 | Database Designer |
+| Samyog Bajgain | K232045 | QA & Documentation |
 | Ashish Neupane | K250176 | Front-End Developer |
 | Muman Ghale | K240793 | Back-End Developer |
-| Bhushan | K250172 | QA & Documentation |
+| Bhushan | K250172 | Database Designer |
 
 **Lecturer:** Mr Mehedi Hasan
 **Industry Sponsor:** Skillup Labs — Nabin Singh (wil@skilluplabs.com.au)
