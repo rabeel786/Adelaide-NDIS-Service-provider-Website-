@@ -130,7 +130,7 @@ This project follows an **Agile Scrum approach**:
 | Rabeel Riasat  | Project Manager     |
 | Sanup Shrestha | Business Analyst    |
 | Samyog Bajgain | Database Designer   |
-| Ashish Neupane | Front-End Developer |
+| Ashish Neupane | Requirements Engineer |
 | Muman Ghale    | Back-End Developer  |
 | Bhushan     | QA & Documentation  |
 
