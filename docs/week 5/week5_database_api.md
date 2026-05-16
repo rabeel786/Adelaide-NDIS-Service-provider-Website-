@@ -2,18 +2,6 @@
 ## Adelaide Care Connect | CPRO306 Capstone Project
 **Kent Institute Australia | Team: Group 8 | 2026**
 
----
-
-## Table of Contents
-
-1. [Database Overview](#1-database-overview)
-2. [Entity Relationship Diagram (ERD)](#2-entity-relationship-diagram-erd)
-3. [Data Flow Diagram (DFD)](#3-data-flow-diagram-dfd)
-4. [Database Tables — Full Schema](#4-database-tables--full-schema)
-5. [API Specification](#5-api-specification)
-6. [Deliverables Checklist](#6-deliverables-checklist)
-
----
 
 ## 1. Database Overview
 
