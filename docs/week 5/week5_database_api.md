@@ -593,21 +593,5 @@ These are handled via standard HTML form POST, not AJAX.
 
 All POST forms include a hidden `csrf_token` field validated server-side to prevent CSRF attacks.
 
----
-
-## 6. Deliverables Checklist
-
-| Deliverable | Status | File Location |
-|---|---|---|
-| Database schema SQL file | ✅ Complete | `database/schema.sql` |
-| ERD diagram | ✅ Complete | See Section 2 above |
-| DFD Level 0 (Context) | ✅ Complete | See Section 3 above |
-| DFD Level 1 (Process) | ✅ Complete | See Section 3 above |
-| All 10 table definitions | ✅ Complete | See Section 4 above |
-| Chatbot API specification | ✅ Complete | See Section 5.1 above |
-| Get Staff API specification | ✅ Complete | See Section 5.2 above |
-| Booking action endpoints | ✅ Complete | See Section 5.3 above |
-
----
 
 *Adelaide Care Connect | CPRO306 Capstone Project | Kent Institute Australia | Week 5 Deliverable | 2026*
