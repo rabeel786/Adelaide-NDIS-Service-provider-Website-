@@ -2,18 +2,6 @@
 ## Adelaide Care Connect | CPRO306 Capstone Project
 **Kent Institute Australia | Team: Group 8 | 2026**
 
----
-
-## Table of Contents
-
-1. [Database Overview](#1-database-overview)
-2. [Entity Relationship Diagram (ERD)](#2-entity-relationship-diagram-erd)
-3. [Data Flow Diagram (DFD)](#3-data-flow-diagram-dfd)
-4. [Database Tables — Full Schema](#4-database-tables--full-schema)
-5. [API Specification](#5-api-specification)
-6. [Deliverables Checklist](#6-deliverables-checklist)
-
----
 
 ## 1. Database Overview
 
@@ -374,78 +362,9 @@ flowchart TD
 | `admin_notes` | TEXT | NULL | Admin notes added during approval |
 | `created_at` | TIMESTAMP | DEFAULT NOW() | Booking submission timestamp |
 
----
 
-### Table 6: `shifts`
-> Staff shift assignments auto-created when a booking is approved.
 
-| Field | Type | Constraint | Description |
-|---|---|---|---|
-| `shift_id` | INT | PK, AUTO_INCREMENT | Unique shift identifier |
-| `staff_id` | INT | FK → staff | Staff member assigned to this shift |
-| `booking_id` | INT | FK → bookings | Booking that generated this shift |
-| `shift_date` | DATE | NOT NULL | Date the shift is scheduled |
-| `start_time` | TIME | NOT NULL | Shift start time |
-| `end_time` | TIME | NOT NULL | Shift end time |
-| `status` | ENUM | NOT NULL | Values: `assigned`, `accepted`, `declined`, `completed` |
-| `decline_reason` | TEXT | NULL | Reason provided when staff declines |
-| `created_at` | TIMESTAMP | DEFAULT NOW() | Shift creation timestamp |
-
----
-
-### Table 7: `documents`
-> Secure file storage records. Actual files stored outside web root.
-
-| Field | Type | Constraint | Description |
-|---|---|---|---|
-| `document_id` | INT | PK, AUTO_INCREMENT | Unique document identifier |
-| `user_id` | INT | FK → users | Owner of the document |
-| `file_name` | VARCHAR(255) | NOT NULL | Original filename shown to user |
-| `file_path` | TEXT | AES-256, NOT NULL | Physical file path (encrypted) |
-| `file_type` | VARCHAR(100) | NOT NULL | MIME type e.g. application/pdf |
-| `file_size` | INT | NOT NULL | File size in bytes |
-| `description` | VARCHAR(200) | NULL | User-provided description |
-| `is_active` | TINYINT(1) | DEFAULT 1 | 0 = soft deleted |
-| `uploaded_at` | TIMESTAMP | DEFAULT NOW() | Upload timestamp |
-
----
-
-### Table 8: `enquiries`
-> Public contact form submissions from the website.
-
-| Field | Type | Constraint | Description |
-|---|---|---|---|
-| `enquiry_id` | INT | PK, AUTO_INCREMENT | Unique enquiry identifier |
-| `name` | VARCHAR(150) | NOT NULL | Full name of person submitting |
-| `email` | VARCHAR(180) | NOT NULL | Reply-to email address |
-| `phone` | VARCHAR(25) | NULL | Optional contact phone |
-| `subject` | VARCHAR(200) | NULL | Enquiry subject |
-| `message` | TEXT | NOT NULL | Full enquiry message |
-| `is_read` | TINYINT(1) | DEFAULT 0 | 1 = read by admin |
-| `is_archived` | TINYINT(1) | DEFAULT 0 | 1 = archived |
-| `submitted_at` | TIMESTAMP | DEFAULT NOW() | Submission timestamp |
-
----
-
-### Table 9: `news_resources`
-> News articles and resources published by administrators.
-
-| Field | Type | Constraint | Description |
-|---|---|---|---|
-| `post_id` | INT | PK, AUTO_INCREMENT | Unique post identifier |
-| `title` | VARCHAR(255) | NOT NULL | Article headline |
-| `slug` | VARCHAR(255) | NOT NULL, UNIQUE | URL-friendly title for routing |
-| `content` | LONGTEXT | NOT NULL | Full HTML content (Quill editor) |
-| `excerpt` | TEXT | NULL | Short summary for listing cards |
-| `category` | ENUM | NOT NULL | Values: `news`, `ndis_update`, `health_tip`, `resource` |
-| `author_id` | INT | FK → users | Admin who created the post |
-| `is_published` | TINYINT(1) | DEFAULT 0 | 1 = visible on public site |
-| `published_at` | TIMESTAMP | NULL | Publication timestamp |
-| `created_at` | TIMESTAMP | DEFAULT NOW() | Post creation timestamp |
-
----
-
-### Table 10: `chatbot_logs`
+### Table 6: `chatbot_logs`
 > Anonymised AI chatbot conversation logs. No PII stored.
 
 | Field | Type | Constraint | Description |
@@ -593,21 +512,5 @@ These are handled via standard HTML form POST, not AJAX.
 
 All POST forms include a hidden `csrf_token` field validated server-side to prevent CSRF attacks.
 
----
-
-## 6. Deliverables Checklist
-
-| Deliverable | Status | File Location |
-|---|---|---|
-| Database schema SQL file | ✅ Complete | `database/schema.sql` |
-| ERD diagram | ✅ Complete | See Section 2 above |
-| DFD Level 0 (Context) | ✅ Complete | See Section 3 above |
-| DFD Level 1 (Process) | ✅ Complete | See Section 3 above |
-| All 10 table definitions | ✅ Complete | See Section 4 above |
-| Chatbot API specification | ✅ Complete | See Section 5.1 above |
-| Get Staff API specification | ✅ Complete | See Section 5.2 above |
-| Booking action endpoints | ✅ Complete | See Section 5.3 above |
-
----
 
 *Adelaide Care Connect | CPRO306 Capstone Project | Kent Institute Australia | Week 5 Deliverable | 2026*
