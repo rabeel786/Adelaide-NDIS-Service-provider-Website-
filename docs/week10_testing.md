@@ -378,7 +378,7 @@ Week 10 Deliverable: Testing — 15 test cases executed, 7 bugs fixed, 100% pass
 
 ---
 
-# Team Contributions This Week
+## Team Contributions This Week
 
 | Member | Role | Contribution | Hours |
 |---|---|---|---|
